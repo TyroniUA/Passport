@@ -1,0 +1,26 @@
+<div class="main">
+    <div class="Passport">
+  
+      <div class="authBlock">
+        <h3>Sign Up</h3>
+  
+        
+          <input type="email"  placeholder="Email Address" #userEmail required>
+          <input type="password"  placeholder="Password" #userPwd required>
+          <input type="button" class="btn btnPrimary" value="Sign Up" (click)="authService.SignUp(userEmail.value, userPwd.value)">
+          <span class="or">Or</span>
+          
+          <button type="button"  (click)="authService.GoogleAuth()">
+            <img width='100%' heihgt='auto' src="https://i.ibb.co/GxBvwP5/login-with-google-button-png-1.png" alt="login-with-google-button-png-1" />
+          </button>
+  
+        
+      </div>
+  
+      <div class="acchave">
+        <h4>Already have an account? </h4>
+        <a  href="/sign-in">Log In</a>
+      </div>
+    </div>
+  
+  </div>

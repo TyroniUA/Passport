@@ -1,0 +1,80 @@
+.main{
+    background: rgb(43, 153, 76);
+    height: 100vh;
+}
+.Passport{
+   display: block;
+    background: white;
+    width: 26.06vw;
+    margin: 0 auto 0 auto;
+     border: grey;
+     border-radius: 10px;
+     box-shadow: 5px 5px 15px rgba(12, 12, 12, 0.575);
+ 
+   
+   h3{
+        font: 600 1.82vw Montserrat;
+        text-align: center;
+   }
+   input{
+       display: block;
+       border: 1px solid rgba(128, 128, 128, 0.589);
+       border-radius:0.26vw;
+       width:24vw;
+       height: 3vw;
+       margin: 0 auto 1.20vw auto;
+       padding: 10px;
+       font: 400 1.05vw Montserrat;
+       
+   }
+   .login{ 
+       display: block;
+       margin: 0 auto 0 auto;
+       border:none;
+       border-radius:0.26vw;
+       width: 12vw;
+       height: 3vw;
+       background: rgb(252, 196, 42);
+       font: 400 1.05vw Montserrat;
+   }
+   .or{
+       font: 400 1.05vw Montserrat;
+       display: block;
+       text-align: center;
+       margin: 0.6vw 0 0.6vw 0;
+   }
+   button{
+       border: none;
+       display: block;
+       width: 14vw;
+       margin: 0 auto 0 auto;
+   }
+   img{
+       border: none;
+   }
+   .acchave{
+    display: block;
+    margin: 0 auto 0 auto;
+    padding: 20px;
+    h4{
+        font: 400 1vw Montserrat;
+        text-align: center;
+        margin: 1vw 0 1vw 0;
+    }
+    a{
+        display: flex;
+        font: 400 1.2vw Montserrat;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+}
+.frgtpss{
+    display: block;
+    margin: 0 auto 0 auto;
+    a{
+        display: flex;
+        font: 400 1vw Montserrat;
+        justify-content: center;
+    }
+}
+}

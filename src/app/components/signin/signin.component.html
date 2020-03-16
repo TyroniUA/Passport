@@ -1,0 +1,33 @@
+
+<div class="main">
+    <div class="Passport">
+  
+      <div class="authBlock">
+        <h3>Sign In</h3>
+        
+          <input type="text" placeholder="Username" #userName required>
+        
+          <input type="password"  placeholder="Password" #userPassword required>
+        
+          <button class="login" (click)="authService.SignIn(userName.value, userPassword.value)">Log in</button>
+
+          <span class="or">Or</span>
+        
+          <button type="button"  (click)="authService.GoogleAuth()">
+            <img width='100%' heihgt='auto' src="https://i.ibb.co/GxBvwP5/login-with-google-button-png-1.png" alt="login-with-google-button-png-1" />
+          </button>
+        </div>
+  
+        <div class="frgtpss">
+          <a href="/forgot-password">Forgot Password?</a>
+        </div>
+      
+  
+      <div class="acchave">
+        <h4>Don't have an account? </h4>
+          <a href="/register-user"> Sign Up</a>
+       
+      </div>
+  
+    </div>
+  </div>
