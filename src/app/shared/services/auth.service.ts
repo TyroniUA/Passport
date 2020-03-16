@@ -55,7 +55,6 @@ export class AuthService {
       })
   }
 
-  
 
 
   ForgotPassword(passwordResetEmail) {
@@ -70,7 +69,8 @@ export class AuthService {
   // Проверка вышел ли юзер или нет
   get isLoggedIn(): boolean {
     const user = JSON.parse(localStorage.getItem('user'));
-    return (user !== null && user.emailVerified !== false) ? true : false;
+    return user !== null ? true : false; /* для дева из Dairly Solution - ошибка была тут в проверка подтвержденного имейла. 
+    Я некорректно удалил логику и забыл подчистить тут. Как результат оно постоянно давало "фолс" */
   }
 
 
@@ -92,9 +92,6 @@ export class AuthService {
     })
   }
 
-
-
-
  
   SignOut() {
     return this.afAuth.auth.signOut().then(() => {
@@ -104,4 +101,3 @@ export class AuthService {
   }
 
 }
-
